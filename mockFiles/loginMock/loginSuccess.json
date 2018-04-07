@@ -1,0 +1,12 @@
+{
+  "success":true,
+  "authKey":"123adsewH43wge54_weg56ASC",
+  "user" : {
+    "name": "Steve Jobs",
+    "address":"2101 Waverley Street, U.S",
+    "emailId": "steve@apple.com",
+    "phoneNo": 8666052729,
+    "isStudent": true,
+    "imgUrl":"http://pngimg.com/uploads/steve_jobs/steve_jobs_PNG2.png"
+  }
+}

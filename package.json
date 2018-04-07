@@ -1,0 +1,15 @@
+{
+  "name": "myexpressapp",
+  "version": "1.0.0",
+  "description": "First express project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnab Kar",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
