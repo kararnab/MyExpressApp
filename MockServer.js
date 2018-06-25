@@ -16,4 +16,6 @@ app.post('/login', (req, res) => {
   }
 })
 
+app.get('/chathistory',(req, res) => res.send(require('./mockFiles/chatHistoryMock/chat_history.json')))
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
