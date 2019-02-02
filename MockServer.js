@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const bodyParser = require("body-parser");
 
+var port = process.env.PORT || 8080;
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
@@ -18,4 +20,6 @@ app.post('/login', (req, res) => {
 
 app.get('/chathistory',(req, res) => res.send(require('./mockFiles/chatHistoryMock/chat_history.json')))
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, function() {
+  console.log('Our app is running on http://localhost:' + port);
+});
