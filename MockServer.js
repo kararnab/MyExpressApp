@@ -18,6 +18,11 @@ app.post('/login', (req, res) => {
   }
 })
 
+app.get("/repoService/myClasses/:tagId/runtimeMetrics",(req, res) => {
+  console.log('RuntimeMetrics for Class',req.params.tagId)
+  return res.send(require('./mockFiles/runtimeMetrics.json'))
+})
+
 app.get('/chathistory',(req, res) => res.send(require('./mockFiles/chatHistoryMock/chat_history.json')))
 
 app.listen(port, function() {
