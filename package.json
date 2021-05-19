@@ -1,10 +1,11 @@
 {
   "name": "myexpressapp",
   "version": "1.0.0",
-  "description": "First express project",
+  "description": "Express project for mocking",
   "main": "MockServer.js",
   "scripts": {
     "start": "node MockServer.js",
+    "startDev": "nodemon MockServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arnab Kar",
@@ -12,5 +13,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
